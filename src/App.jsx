@@ -3,7 +3,7 @@ import Header from './components/Header';
 import NeedHelp from './components/NeedHelp';
 import Trip from './components/Trip';
 import View from './components/View';
-import Navbar from './components/navbar';
+import Navbar from './components/Navbar';
 
 // import style
 import './style/main.scss';
