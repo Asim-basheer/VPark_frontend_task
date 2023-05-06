@@ -1,0 +1,179 @@
+.trip {
+  padding: 2rem;
+  background-color: $white;
+  border-radius: 1rem;
+  &__heading {
+    font-weight: 800;
+    color: #081836;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+  }
+
+  hr {
+    border-color: rgb(255 255 255 / 50%);
+    margin-bottom: 1rem;
+  }
+  &__box {
+    background-image: url(https://media.wired.com/photos/59269cd37034dc5f91bec0f1/191:100/w_1280,c_limit/GoogleMapTA.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  &__form {
+    background-color: $white;
+    width: 400px;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 1px 5px -1px rgba($blackDarker, 0.2);
+
+    p:first-of-type {
+      color: $blackLighter;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+
+    .icon-i {
+      color: $blackLighter;
+      font-weight: 800;
+      border: 1px solid $blackLighter;
+      font-size: 0.9rem;
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      line-height: 18px;
+      border-radius: 2px;
+      text-align: center;
+      margin-left: 2px;
+    }
+
+    p:last-of-type {
+      color: rgba($blackDarker, 0.5);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__inputs {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  &__input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+
+    label {
+      color: $blackLighter;
+      font-weight: 800;
+    }
+    input {
+      width: 100%;
+      background-color: $whiteLighter;
+      box-shadow: 0px 1px 5px -1px rgba($blackDarker, 0.2);
+      outline: none;
+      border: none;
+      padding: 0.6rem 1rem;
+      border-radius: 1rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: $blackLighter;
+    }
+    svg {
+      position: absolute;
+      right: 0.5rem;
+      bottom: -3px;
+      font-size: 2.4rem;
+      color: $primary;
+    }
+  }
+
+  &__auto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    span {
+      color: $blackLighter;
+      font-weight: 800;
+      display: inline-block;
+      margin-right: 3px;
+    }
+  }
+
+  &__img-auto {
+    background-color: $primary;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 20px;
+    }
+  }
+
+  &__points {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  &__point {
+    span:first-of-type {
+      background-color: $whiteLighter;
+      box-shadow: 0px 1px 5px -1px rgba($blackDarker, 0.2);
+      padding: 0.6rem 1rem;
+      display: block;
+      text-align: center;
+      margin-bottom: 1rem;
+      color: $blackLighter;
+      font-weight: 500;
+      font-size: 0.9rem;
+
+      &.active {
+        color: $blackDark;
+      }
+    }
+    span:last-of-type {
+      border: 2px solid $yellow;
+      color: $yellow;
+      display: block;
+      text-align: center;
+      border-radius: 1rem;
+      padding: 0.4rem 0.8rem;
+      font-size: 1.4rem;
+      font-weight: 800;
+
+      &.green {
+        border: 2px solid $green;
+        color: $green;
+      }
+
+      &.red {
+        border: 2px solid $red;
+        color: $red;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      width: calc(50% - 0.5rem);
+      text-align: center;
+    }
+  }
+}
