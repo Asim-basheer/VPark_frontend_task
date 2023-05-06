@@ -36,7 +36,7 @@ const Trip = () => {
             </div>
             <hr />
             <div className='trip__auto'>
-              <div>
+              <div className='auto-generate'>
                 <span>Auto Generate</span>
                 <p className='icon-i'>i</p>
               </div>

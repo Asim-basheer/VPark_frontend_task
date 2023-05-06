@@ -107,6 +107,15 @@
       display: inline-block;
       margin-right: 3px;
     }
+
+    .auto-generate {
+      display: flex;
+      align-items: center;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__img-auto {
