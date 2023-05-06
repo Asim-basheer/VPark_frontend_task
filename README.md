@@ -18,8 +18,9 @@ git clone https://github.com/Asim-basheer/VPark_frontend_task.git
 
 ## 2- Install dependencies:
 
-cd my-react-app
-npm install
+#### cd my-react-app
+
+#### npm install
 
 ## 3- Start the development server:
 
