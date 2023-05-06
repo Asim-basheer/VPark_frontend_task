@@ -1,0 +1,18 @@
+.activity {
+  display: flex;
+  gap: 1.4rem;
+  &__left,
+  &__right {
+    flex: 1;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    height: 800px;
+    overflow: hidden;
+  }
+
+  &__left {
+    padding-left: 2rem;
+    background-color: white;
+  }
+}

@@ -1,0 +1,15 @@
+.btn {
+  padding: 0.8rem 2.3rem;
+  border-radius: 1rem;
+  font-size: 1.05;
+  font-weight: 700;
+  width: fit-content;
+  color: $white;
+  background-color: $yellow;
+
+  &--outline {
+    border: 1px solid $yellow;
+    background-color: $white;
+    color: $yellow;
+  }
+}

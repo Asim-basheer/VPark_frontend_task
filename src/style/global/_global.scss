@@ -24,7 +24,7 @@ a {
   padding: 2rem;
 }
 
-.row {
+.row-main {
   display: flex;
 }
 
@@ -39,4 +39,12 @@ a {
   background-color: $whiteLight;
   border-top-left-radius: 2rem;
   padding: 2rem;
+
+  &__heading {
+    display: block;
+    padding-bottom: 1rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: $blackDarker;
+  }
 }

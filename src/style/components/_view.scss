@@ -1,0 +1,40 @@
+.view {
+  background-image: url(https://ik.imagekit.io/ievdkoh2e/task_work/Group_79051_2x_vQsjJ24CH.png?updatedAt=1683324862867);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  padding: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  border-radius: 1rem;
+  position: relative;
+  margin-top: 5rem;
+  &__content {
+    color: $white;
+    span {
+      display: block;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      font-weight: 800;
+      strong {
+        color: $yellow;
+      }
+    }
+
+    p {
+      opacity: 0.5;
+      line-height: 1.3;
+      font-size: 0.9rem;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    right: 2rem;
+    bottom: -5px;
+    img {
+      width: 350px;
+    }
+  }
+}

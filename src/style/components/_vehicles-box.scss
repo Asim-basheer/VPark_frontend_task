@@ -1,0 +1,158 @@
+.vehicles-box {
+  height: 700px;
+  overflow-y: scroll;
+  padding-bottom: 1rem;
+  &::-webkit-scrollbar {
+    background-color: transparent;
+    width: 12px;
+  }
+  &__vehicle {
+    border-radius: 1rem;
+    background-color: $whiteLighter;
+    box-shadow: 0px 1px 5px -1px rgba($blackDarker, 0.2);
+    padding: 0.8rem 1rem;
+    height: 65.6px;
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+    margin: 1rem 0;
+    &.active {
+      overflow: visible;
+      height: 322.8px;
+    }
+  }
+  &__vehicle-visible {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+    div {
+      position: relative;
+      width: 70px;
+
+      img {
+        width: 70px;
+        top: -40px;
+        left: 0;
+        position: absolute;
+        display: block;
+        transition: all 0.3s ease-out;
+        z-index: 2;
+        &.active {
+          top: -55px;
+        }
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        background-color: #00000040;
+        left: 3px;
+        top: -10px;
+        width: 90%;
+        height: 35px;
+        transform: skewY(11deg);
+        border-radius: 50%;
+        opacity: 0;
+        transition: all 0.3s 0.1s ease-out;
+      }
+
+      &.active::after {
+        opacity: 1;
+      }
+    }
+
+    span:first-of-type {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+
+      &.red-status {
+        background-color: $red;
+      }
+
+      &.green-status {
+        background-color: $green;
+      }
+
+      &.yellow-status {
+        background-color: $yellow;
+      }
+    }
+    svg {
+      margin-left: auto;
+      font-size: 2.5rem;
+      transition: all 0.3s ease-out;
+      color: $primary;
+      &.active {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__vehicle-hidden {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    gap: 1rem;
+    transition: all 0.3s 0.15s ease-out;
+    opacity: 0;
+    &.active {
+      opacity: 1;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      flex: 1;
+      cursor: pointer;
+      img {
+        height: 30px;
+      }
+
+      span:first-of-type {
+        color: $blackLight;
+        font-size: 0.9rem;
+      }
+
+      span:nth-of-type(2) {
+        font-size: 1.3rem;
+        font-weight: 800;
+      }
+
+      span:last-of-type {
+        font-size: 0.9rem;
+        background-color: $greenLight;
+        color: $green;
+        display: block;
+        padding: 0.6rem 0;
+        padding-left: 1rem;
+        width: 100%;
+        border-radius: 1rem;
+        position: relative;
+        &.red {
+          background-color: $redLight;
+          color: $red;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          right: 0.6rem;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: $green;
+        }
+
+        &.red::before {
+          background-color: $red;
+        }
+      }
+    }
+  }
+}

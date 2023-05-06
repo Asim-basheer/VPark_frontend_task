@@ -1,0 +1,48 @@
+.need-help {
+  background-image: url(https://ik.imagekit.io/ievdkoh2e/task_work/Group_84925_2x_LyppUS2dm.png?updatedAt=1683324862633);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center center;
+  border-radius: 1rem;
+  margin: auto;
+  margin-top: 15.4rem;
+  padding: 1rem;
+  padding-top: 4rem;
+  position: relative;
+  img {
+    width: 70%;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: -55px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  span,
+  p {
+    text-align: center;
+    color: $white;
+  }
+
+  span {
+    display: block;
+    padding-bottom: 1rem;
+    font-weight: 800;
+    font-size: 1.1rem;
+  }
+
+  p {
+    color: rgba($white, 0.7);
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  a {
+    margin: auto;
+    margin-top: 1rem;
+    display: block;
+
+    // for btn
+  }
+}
